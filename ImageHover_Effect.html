@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Effect</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .box{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img{
+            position: relative;
+        }
+
+        .man{
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+
+        .desc h1{
+            font-size: 80px;
+        }
+
+        .desc p{
+            font-size: 40px;
+        }
+
+        .desc{
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: 0.4s;
+            color: white;
+        }
+
+        .desc:hover{
+            opacity: 1;
+            transition: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="img">
+            <img src="https://st4.depositphotos.com/11585370/21150/i/450/depositphotos_211508226-stock-photo-closeup-picture-good-looking-european.jpg" alt="image" class="man">
+            <div class="desc">
+                <h1>Hello World!</h1>
+                <p>What are you doing ?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
